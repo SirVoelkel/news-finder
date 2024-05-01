@@ -1,0 +1,19 @@
+/************ Default Settings ************/
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root{
+    --ocker-color: (180,95,6);
+    --dark-yellow: (191,144,0);
+    --dark-red: (102,0,0);
+    --dark-color: ;
+    --dark-accent: (58,32,20);
+    --light-color: ;
+    --light-accent: (255,236,220);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Ubuntu Mono", monospace;
+}
