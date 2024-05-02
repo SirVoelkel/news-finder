@@ -7,8 +7,33 @@
     <title>Search Site | Logan</title>
 </head>
 <body>
-    <h1>Ich bin der König im Affenhaus!</h1>
 
+    <div class="container">
+        <h1>Nachrichten Sammler</h1>
+
+        <div class="selection-container">
+            <label for="category">Kategorie Wählen: </label>
+            <select id="category">
+                <option value="business">Wirtschaft</option>
+                <option value="entertainment">Unterhaltung</option>
+                <option value="general">Allgemein</option>
+                <option value="health">Gesundheit</option>
+                <option value="science">Wissenschaft</option>
+                <option value="sports">Sport</option>
+                <option value="technology">Technologie</option>
+            </select>
+            <button id="fetch-category">Nachrichten abrufen</button>
+        </div>
+
+        <div class="search-container">
+            <input type="text" id="searchKeyword" placeholder="Nachrichten suchen">
+            <button onclick="fetchNews(true)">Suchschlüssel</button>
+        </div>
+
+        <div id="news-container">
+            
+        </div>
+    </div>    
 
     <script src="add.js"></script>
 </body>

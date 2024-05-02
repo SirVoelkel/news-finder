@@ -1,14 +1,14 @@
 /************ Default Settings ************/
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
 :root{
-    --ocker-color: (180,95,6);
-    --dark-yellow: (191,144,0);
-    --dark-red: (102,0,0);
-    --dark-color: ;
-    --dark-accent: (58,32,20);
-    --light-color: ;
-    --light-accent: (255,236,220);
+    --ocker-color: rgb(180, 95, 6);
+    --dark-yellow: rgb(191, 144, 0);
+    --dark-red: rgb(102, 0, 0);
+    --dark-color: rgb(22, 22, 22);
+    --dark-accent: rgb(58, 32, 20);
+    --light-color: #fafafa;
+    --light-accent: rgb(255, 236, 220);
 }
 
 *{
@@ -17,3 +17,96 @@
     box-sizing: border-box;
     font-family: "Ubuntu Mono", monospace;
 }
+
+
+
+
+
+/************ Main Settings ************/
+
+body{
+    background: var(--light-accent);
+}
+
+.container{
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: var(--dark-accent);
+
+    transition: all .3s ease;
+
+    &:hover{
+        box-shadow: 0 10px 30px rgba(0, 0, 0, .2);
+    }
+}
+
+h1{
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    color: var(--light-color);
+    margin-bottom: 30px;
+    border-bottom: 2px solid var(--dark-color);
+    padding-bottom: 30px;
+}
+
+.selection-container,
+.search-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.selection-container label{
+    font-size: 20px;
+    font-weight: 700;
+    margin-right: 10px;
+}
+
+.selection-container select{
+    padding: 8px;
+    flex: 1;
+    border: 1px solid var(--light-accent);
+    outline: none;
+}
+
+.selection-container button{
+    min-width: 180px;
+    border: none;
+    background-color: var(--dark-yellow);
+    color: var(--light-color);
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+.search-container input[type="text"]{
+    padding: 8px;
+    flex: 1;
+    border: 1px solid var(--light-accent);
+    outline: none;
+}
+
+.search-container button{
+    min-width: 180px;
+    border: none;
+    background-color: var(--dark-yellow);
+    color: var(--light-color);
+    padding: 9px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+
+
+
+
+
+
+
+
